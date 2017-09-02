@@ -71,9 +71,9 @@ void			populate_permissions(char permissions[11], t_files *dir)
 	permissions[7] = (dir->stats.st_mode & S_IROTH) ? 'r' : '-';
 	permissions[8] = (dir->stats.st_mode & S_IWOTH) ? 'w' : '-';
 	if (dir->stats.st_mode & S_ISVTX)
-		permissions[6] = (dir->stats.st_mode & S_IXOTH) ? 't' : 'T';
+		permissions[9] = (dir->stats.st_mode & S_IXOTH) ? 't' : 'T';
 	else
-		permissions[6] = (dir->stats.st_mode & S_IXOTH) ? 'x' : '-';
+		permissions[9] = (dir->stats.st_mode & S_IXOTH) ? 'x' : '-';
 	permissions[10] = 0;
 }
 
