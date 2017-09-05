@@ -6,7 +6,7 @@
 #    By: sbogar <sbogar@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/02/28 15:52:30 by sbogar            #+#    #+#              #
-#    Updated: 2017/08/10 20:03:06 by sbogar           ###   ########.fr        #
+#    Updated: 2017/09/05 15:06:06 by sbogar           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,7 +39,6 @@ all: $(NAME)
 
 $(NAME): objs/ $(LIB) $(OBJS)
 	@gcc -o $(NAME) $(FLAGS) $(OBJS) -L./libft/ -lft
-	@say -v whisper "players with aracocran characters are indisputably furries"
 	@echo "ft_ls has been made!"
 
 objs/%.o: src/%.c
